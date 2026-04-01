@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class menuPanel extends JPanel {
 
-    Image tlo;
+   
     JButton GraczVsGracz;
     JButton GraczVsPC;
     JButton Koniec;
@@ -31,8 +31,7 @@ public class menuPanel extends JPanel {
         Koniec.setForeground(Color.white);
         Koniec.setBackground(Color.decode("#1E1E1E"));
         this.add(Koniec);
-
-        tlo = new ImageIcon("tlo.png").getImage();
+        this.setBackground(Color.decode("#2A2A2A"));
 
         Koniec.addActionListener(e -> {
             System.exit(0);
@@ -56,11 +55,6 @@ public class menuPanel extends JPanel {
             aktualnie.getContentPane().revalidate();
         });
 
-    }
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        g.drawImage(tlo, 0, 0, getWidth(), getHeight(), this);
     }
 
 }
