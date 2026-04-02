@@ -6,7 +6,7 @@ public class StudentApp extends JFrame implements  Runnable {
     @Override
     public void run() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle("s230984");
+        this.setTitle("Gra");
         this.setSize(400,500);
         this.setResizable(false);
         this.setAlwaysOnTop(true);
